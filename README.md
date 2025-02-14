@@ -12,6 +12,6 @@ The Kolmogorov complexity measures the compressibility of real numbers. Accordin
 
 The results of our experiments are presented below. As expected, the predictive performance of the networks improves significantly as the number of quantization bits increases (from $2$ to $64$). The forecast horizon also affect the networks performance, to a lesser extent. The logarithmic scale of the heatmaps highlights the substantial gains achieved by increasing weight precision, or equivalently, the drastic losses induced by greater weight quantization. Overall, these results demonstrate that in echo state networks -- where the reservoir primarily functions as a dynamical encoder and predictions rely heavily on the output weights $\vec{W}_{\text{out}}$ -- the level of quantization plays a crucial role in the network's capabilities. This contrasts with deep feedforward architectures, such as Transformers and convolutional neural networks (CNNs), where weight approximation and compression techniques have been successfully applied~\cite{Mittal16,Young24}. We conjecture that this difference arises from the ability of deep architectures to distribute approximation errors across successive layers, thereby mitigating their impact on overall performance.
 
-<img src="https://github.com/JeremCab/QuantizedESNs/blob/main/runs/plots/fig_mackeyglass_all_heatmap.pdf" width="32%"/>
-<img src="https://github.com/JeremCab/QuantizedESNs/blob/main/runs/plots/fig_lorenz_all_heatmap.pdf" width="32%"/>
-<img src="https://github.com/JeremCab/QuantizedESNs/blob/main/runs/plots/fig_henonmap_all_heatmap.pdf" width="32%"/>
+<img src="https://github.com/JeremCab/QuantizedESNs/blob/main/fig_mackeyglass_all_heatmap.png" width="32%"/>
+<img src="https://github.com/JeremCab/QuantizedESNs/blob/main/fig_lorenz_all_heatmap.png" width="32%"/>
+<img src="https://github.com/JeremCab/QuantizedESNs/blob/main/fig_henonmap_all_heatmap.png" width="32%"/>
